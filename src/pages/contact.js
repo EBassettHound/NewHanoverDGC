@@ -1,6 +1,6 @@
 import React, { useState }  from "react"
 import axios from "axios";
-import { Link } from "gatsby"
+
 import Layout from "../components/layout"
 const MyForm = () => {
 
@@ -36,15 +36,21 @@ const MyForm = () => {
     return (
         <Layout>
 
-    <div>
-         <div className="col-md-8 mt-5">
+    <div >
+         <div style={{ textAlign: 'center' }} className="col-md-8 mt-5">
             <h3>Comments, Questions, Concerns? Lost a disc?</h3>
             <form onSubmit={handleOnSubmit}>
               <input type="email" name="email" placeholder="Your Email"/>
               <input type="text" name="name" placeholder="Your Name"/>
-              <input type="text" name="message" placeholder="Your Message"/>
+              <br/>
+              <input style={{ width: '340px', height: '60px' }}  type="text" name="message" placeholder="Your Message"/>
+              <br/>
               <button type="submit">Send</button>
           </form>
+        </div>
+        <br></br>
+        <div style={{ textAlign: 'center' }}>
+          Connect with us on <a href="https://www.facebook.com/groups/newhanoverdgc/">Facebook!</a> or <a href="https://www.instagram.com/newhanoverdiscgolfclub/">Instagram!</a>
         </div>
     </div>
 

@@ -7,8 +7,8 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Navbar from "../components/navbar"
 
-import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -24,7 +24,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={'New Hanover DGC'} />
+    <Navbar />
+      
       <div
         style={{
           margin: `0 auto`,
@@ -43,6 +44,8 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()} &middot; Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <br/>
+          By <a href="https://www.linkedin.com/in/ethan-bassett/">Ethan Bassett</a>
         </footer>
       </div>
     </>

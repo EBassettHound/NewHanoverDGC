@@ -1,7 +1,7 @@
 :root {
   --border-radius: 4px;
   --color-text: #333;
-  --color-primary: #7026b9;
+  --color-primary: #48b814a9;
   --color-code-bg: #fff4db;
   --color-code: #8a6534;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
@@ -24,6 +24,7 @@
   --size-content: 54rem;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
+  background-color: #99bfe2;
 }
 html {
   -webkit-text-size-adjust: 100%;
@@ -72,7 +73,7 @@ dfn {
 }
 h1 {
   margin: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   padding: 0;
   line-height: var(--line-height-dense);
   letter-spacing: -0.01em;
@@ -222,3 +223,16 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
+.courses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.containerStyle {
+  text-align: 'center';
+  margin-top: '50px';
+  border: '1px solid #ccc';
+  padding: '20px';
+  width: '300px';
+  min-height: '200px'
+};
