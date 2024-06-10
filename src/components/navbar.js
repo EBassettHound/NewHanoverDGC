@@ -9,7 +9,7 @@ const Navbar = () => (
   <nav>
     <div className="logo">
     <StaticImage
-        src="../images/NHDGC-LOGO.jpg"
+        src="../images/NHDGC.jpg"
         loading="eager"
         width={128}
         quality={95}
